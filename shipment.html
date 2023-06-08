@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User | Jeelby</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./Style/bootstrap.css">
+    <link rel="stylesheet" href="./Style/style1.css">
+    <link rel="stylesheet" href="./Style/style2.css">
+    <link rel="stylesheet" href="./Style/newStyle.css">
+    <link rel="stylesheet" href="./Style/select2.css">
+    <!-- icons -->
+    <script src="https://use.fontawesome.com/9a4d1ae3b6.js"></script>
+    <link href="https://use.fontawesome.com/9a4d1ae3b6.css" media="all" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Style/logo/favicon.png">
+</head>
+<body>
+    <!-- Loading Gif -->
+    <div class="loading_pages d-none" id="pre-loader">
+        <div class="loading_gif">
+            <img src="./Style/assets/loading.gif">
+        </div>
+    </div>
+
+    <!-- Header start -->
+    <header class="fixed-top">
+        <div class="container-fluid bg-white">
+            <nav class="navbar navbar-expand-lg nav-barc">
+                <a class="navbar-brand" href="#">
+                    <img src="./Style/assets/logo.png">
+                </a>
+                <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
+                        <title>Menu</title>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
+                <div class="btn-group dropdown_menus profile_btn d-block d-md-none ">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" onclick="">
+                        <img class="" src="https://thedigigarage.in/demo/jeebly3/assets/images/avatar.png" alt="">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button"><a href="https://thedigigarage.in/demo/jeebly3/profile"><i class="bi bi-person-fill"></i>Profile</a></button>
+                        <button class="dropdown-item" type="button"> <a href="https://thedigigarage.in/demo/jeebly3/cod-settlement"><i class="fa fa-money" aria-hidden="true"></i> COD </a></button>
+                        <button class="dropdown-item" type="button"><a href="https://thedigigarage.in/demo/jeebly3/contact"><i class="bi bi-envelope"></i>Talk To Us</a></button>
+                        <button class="dropdown-item" type="button"><a href="https://thedigigarage.in/demo/jeebly3/user/logout"><i class="bi bi-box-arrow-right"></i>Log-out</a></button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                        <a class="nav-link" href="https://thedigigarage.in/demo/jeebly3/user">Dashboard</a>
+                        </li>
+                        <li class="nav-item ">
+                        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="" href="https://thedigigarage.in/demo/jeebly3/orders">Orders </a>
+                        </li>
+                        <li class="nav-item ">
+                        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="" href="https://thedigigarage.in/demo/jeebly3/wallet">Wallet </a>
+                        </li>
+                        <li class="nav-item ">
+                        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="" href="https://thedigigarage.in/demo/jeebly3/transactions">Transactions </a>
+                        </li>
+                        <li class="nav-item ">
+                        <a class="nav-link" href="https://thedigigarage.in/demo/jeebly3/rate-card">Rate Card </a>
+                        </li>
+                        <li class="nav-item ">
+                        <a class="nav-link" data-toggle="tooltip" data-placement="top" title="" href="https://thedigigarage.in/demo/jeebly3/pickup-address">Manage Address </a>
+                        </li>
+                    </ul>
+                    <div class="my-2 my-lg-0 right_profile">
+                        <span> <a href="https://thedigigarage.in/demo/jeebly3/track-shipment" class="btn btn-danger rounded-pill px-3 font-weight-bold py-2 mx-5 ">Track Shipment</a></span> 
+                        <a class="btn btn-danger rounded-pill px-3 font-weight-bold py-2 mx-5 " href="https://thedigigarage.in/demo/jeebly3/book-shipment" data-toggle="tooltip" data-placement="top" title="">Book Your Shipment</a>
+                        <div class="btn-group dropdown_menus">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" onclick="showElement()">
+                            <img style="width: 37px" src="https://thedigigarage.in/demo/jeebly3/assets/images/avatar.png" alt>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" id="open">
+                            <button class="dropdown-item" type="button"><a data-toggle="tooltip" data-placement="left" title="" href="https://thedigigarage.in/demo/jeebly3/profile"><i class="bi bi-person-fill"></i>Profile</a></button>
+                            <button class="dropdown-item" type="button">
+                            <a href="https://thedigigarage.in/demo/jeebly3/invoice">					
+                                <i class="bi bi-credit-card-2-back"></i>Invoice</a>
+                            </button>
+                            <button class="dropdown-item" type="button"> <a href="https://thedigigarage.in/demo/jeebly3/cod-settlement"><i class="fa fa-money" aria-hidden="true"></i> COD </a></button>
+                            <button class="dropdown-item" type="button"><a href="https://thedigigarage.in/demo/jeebly3/contact"><i class="bi bi-envelope"></i>Contact</a></button> 
+                            <button class="dropdown-item" type="button"><a href="https://thedigigarage.in/demo/jeebly3/faq"><i class="fa fa-question-circle-o" aria-hidden="true"></i>FAQs</a></button> 
+                            <button class="dropdown-item" type="button"><a href="https://thedigigarage.in/demo/jeebly3/user/logout"><i class="bi bi-box-arrow-right"></i>Log-out</a></button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header end -->
+    <style type="text/css">
+    	.bg-grey{
+    		background-color: #ddd;
+    	}
+    	.modal-body .card h6{
+    		margin-bottom: 5px;
+    		margin-top: 5px;
+    	}
+    	.modal-body .card p{
+    		font-size: 12px;
+    		font-weight: 300;
+    	}
+    	.close-btn{
+    		font-size: 16px;
+    	}
+    	.minus-grid{
+		    margin-top: -8px;
+		    margin-left: -5px;
+    	}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <link rel="stylesheet" href="./Style/bootstrap-selectmin.css">
+    <link rel="stylesheet" href="./Style/intTelInput.css">
+    <link rel="stylesheet" href="./Style/styleV1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js">
+    </script>
+    <!-- slide section -->
+    <div class="container-fluid section py-5 px-0 book_shipments">
+        <div class="container-fluid">
+            <h1 class="text-center mb-5">Book Your Shipment</h1>
+            <div class="card p-4 border-0 shadow">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4 text-center">
+                        <img src="./Style/assets/shipping.png" class="icon mx-auto mb-5">
+                    </div>
+                    <div class="col-lg-2 offset-lg-2 text-center upload-shipment">
+                        <span>
+                            <a href="#">
+                                <i class="fa fa-file-text-os" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                        <h5>
+                            <a class="btn btn-sm btn-dark-blue 	d-none d-md-block " style="height: 35px;padding:12px;" href="#">Bulk Upload</a>
+                        </h5>
+                    </div>
+                </div>
+                <form accept-charset="UTF-8" name="book_shipment_order" method="post" autocomplete="off" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="inside-card pb-80">
+                                <h4>Enter Pickup Location</h4>
+                                <h6>
+                                    <a href="#" class="text-danger">Select from saved address</a>
+                                </h6>
+                                <div class="form-group">
+                                    <label for="addr_contact_person">
+                                        Contact Person 
+                                        <span>*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="addr_contact_person" placeholder="Enter Contact Person" value="test" name="addr_contact_person" required="required">
+                                    <small id class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="addr_mobile_number">
+                                        Mobile Number
+                                        <span>*</span>
+                                    </label>
+                                    <input type="hidden" id="c_code" name="c_code">
+                                    <input type="text" autocomplete="off" id="addr_mobile_number" value="07221821494" class="form-control only-numbers" placeholder="Mobile Number" name="addr_mobile_number" onkeypress="return only_mobile_numbers(event)" maxlength="12" required="required">
+                                    <small id class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="addr_email_id">Email Id </label>
+									<input type="email" class="form-control" id="addr_email_id" name="addr_email_id" value="chandakdevendra3@gmail.com" placeholder="Enter email id">
+									<small class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="addr_house_no">Villa/Apartment Number/Office Number <span>*</span></label>
+									<input type="text" class="form-control" id="addr_house_no" name="addr_house_no" value="feds f" placeholder="Enter house number/office number" required="required">
+									<small class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="addr_building_name">Building <span>*</span></label>
+									<input type="text" class="form-control" value="weff" id="addr_building_name" placeholder="Enter building name" name="addr_building_name" required="required">
+									<small class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="addr_area">Area <span>*</span></label>
+                                    <div class="dropdown bootstrap-select form-control select-search-picker dropup">
+                                        <select name="addr_area" id="addr_area" class="form-control select-search-picker" required="required" aria-describedby="city_country_id_help" data-live-search="true" tabindex="null">
+                                            <option value>Please Select</option>
+                                            <option value="Abu Al Abyad">Abu Al Abyad</option>
+                                            <option value="Abu Dhabi Beach">Abu Dhabi Beach</option>
+                                            <option value="Al Bateen Beach">Al Bateen Beach</option>
+                                            <option value="Al Bithnah">Al Bithnah</option>
+                                            <option value="Al Bu Daniq">Al Bu Daniq</option>
+                                        </select>
+                                        <button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="addr_area" title="Please Select">
+                                            <div class="filter-option">
+                                                <div class="filter-option-inner">
+                                                    <div class="filter-option-inner-inner">Please Select</div>
+                                            </div> 
+                                        </div>
+                                        </button>
+                                        <div class="dropdown-menu" style="max-height: 179.6px; overflow: hidden; min-height: 191px;">
+                                            <div class="bs-searchbox">
+                                                <input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list" aria-activedescendant="bs-select-1-0">
+                                            </div>
+                                            <div class="inner show" role="listbox" id="bs-select-1" tabindex="-1" style="max-height: 131.6px; overflow-y: auto; min-height: 143px;">
+                                                <ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 35062px;"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <small class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="addr_landmark">Landmark <span>*</span></label>
+									<input type="text" class="form-control" id="addr_landmark" name="addr_landmark" placeholder="Enter landmark" value="effd" required="required">
+									<small class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">City <span>*</span></label>
+								
+								<select name="city" class="form-control " id="city" required="required">
+									<option value="Abu Dhabi">Abu Dhabi</option>
+                                    <option value="Dubai">Dubai</option>
+                                    <option value="Sharjah">Sharjah</option>
+                                    <option value="Ajman">Ajman</option>
+                                    <option value="Umm Al-Quwain">Umm Al-Quwain</option>
+                                    <option value="Fujairah">Fujairah</option>
+                                    <option value="Ras Al Khaimah">Ras Al Khaimah</option>									
+                                </select>
+								<small class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input mt-2" id="save_address" name="save_address" value="1">
+									<label class="form-check-label mt-1" for="save_address"><!--Save address in database!-->Save address for further use </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="inside-card pb-80">
+                                <h4>Enter Drop-off Location</h4>
+                                <h6>
+									<a class="text-danger" href="#">Select from saved address</a>
+								</h6>
+                                <div class="form-group">
+                                    <label for="contact_person">Contact person or Company name <span>*</span></label>
+							        <input type="text" class="form-control" id="contact_person" name="contact_person" placeholder="Enter contact person or company name" required="required" value="" autofocus="">
+							        <small class="form-text text-danger "></small>
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" id="d_c_code" name="d_c_code">
+								    <label for="mobile_no">Mobile Number <span>*</span></label>
+							        <input type="text" id="mobile_no" name="mobile_no" class="form-control" placeholder="Mobile Number" required="required" value="">
+							        <small class="form-text text-danger "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email_id">Email Id </label>
+									<input type="email" class="form-control" id="email_id" name="email_id" value="" placeholder="Enter email id">
+									<small class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="house_no">Villa/Apartment Number/Office Number <span>*</span></label>
+							    <input type="text" class="form-control" id="house_no" name="house_no" placeholder="Enter house number/office number" required="required" value="">
+							    <small class="form-text text-danger "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="building">Building <span>*</span></label>
+                                    <input type="text" class="form-control" id="building" name="building" placeholder="Enter building name" required="required" value="">
+                                    <small class="form-text text-danger "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="area">Area <span>*</span></label>
+                                    <div class="dropdown bootstrap-select form-control select-search-picker">
+                                        <select name="area" id="area" class="form-control select-search-picker" required="required" aria-describedby="area_help" data-live-search="true">
+                                            <option value>Please Select</option>
+                                            <option value="Abu Al Abyad">Abu Al Abyad</option>
+                                            <option value="Abu Dhabi Beach">Abu Dhabi Beach</option>
+                                            <option value="Al Bateen Beach">Al Bateen Beach</option>
+                                            <option value="Al Bithnah">Al Bithnah</option>
+                                            <option value="Al Bu Daniq">Al Bu Daniq</option>
+                                        <select>                        
+                                            <button type="button" tabindex="-1" class="btn dropdown-toggle btn-light bs-placeholder bs-invalid" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="area" title="Please Select">
+                                                <div class="filter-option">
+                                                    <div class="filter-option-inner">
+                                                        <div class="filter-option-inner-inner">Please Select
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </button>     
+                                            <div class="dropdown-menu ">
+                                                <div class="bs-searchbox">
+                                                    <input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-2" aria-autocomplete="list">
+                                                </div>
+                                                <div class="inner show" role="listbox" id="bs-select-2" tabindex="-1">
+                                                    <ul class="dropdown-menu inner show" role="presentation">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <small class="form-text text-danger"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="landmark">Landmark <span>*</span></label>
+							    <input type="text" class="form-control" id="landmark" name="landmark" placeholder="Enter landmark" required="required" value="">
+							    <small class="form-text text-danger "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">City <span>*</span></label>
+								
+								<select name="city" class="form-control " id="city" required="required">
+									<option value="Abu Dhabi">Abu Dhabi</option>
+                                    <option value="Dubai">Dubai</option>
+                                    <option value="Sharjah">Sharjah</option>
+                                    <option value="Ajman">Ajman</option>
+                                    <option value="Umm Al-Quwain">Umm Al-Quwain</option>
+                                    <option value="Fujairah">Fujairah</option>
+                                    <option value="Ras Al Khaimah">Ras Al Khaimah</option>									
+                                </select>
+								<small class="form-text text-danger"><small>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input mt-2" id="d_save_address" name="d_save_address" value="1">
+									<label class="form-check-label mt-1" for="d_save_address"><!--Save address in database!-->Save address for further use </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mx-auto text-center py-5">
+                        <button type="submit" class="btn btn-dark-blue px-5 mx-1">Next</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- slide section end -->
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <p class="text-white text-center">All rights reserved. © 2023 Jeebly LLC.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    <!-- script -->
+    <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+        $(document).ready(function (){
+            $('#pre-loader').addClass('d-none');
+            $('body').removeClass('overflow-hidden');
+        });
+    </script>
+    <script>
+        $("#mobile_no").on("countrychange", function (e, countryData) {
+            var code = $("#mobile_no").intlTelInput("getSelectedCountryData").dialCode;
+            $("#d_c_code").val('+'+code);
+        });
+        </script>
+    <script>
+        $('.only-numbers').keyup(function(e){
+            if (/\D/g.test(this.value)){	
+                this.value = this.value.replace(/\D/g, '');	
+            }
+            else{
+                otp_next($(this).prop("tabindex"));   
+            }
+        });  
+        </script>
+    <script>
+        function showElement() {
+            var div = document.getElementById("open");
+            if (!div.classList.contains("show")) {
+                div.classList.add("show");
+            } else {
+                div.classList.remove("show");
+            }
+        }
+        </script>
+    <script src="./Script/bootstrap-bundlemin.js"></script>
+    <script src="./Script/jQuery.js"></script>
+    <script src="./Script/bootstrap-selectmin.js"></script>
+    <script>$('.select-search-picker').selectpicker();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
