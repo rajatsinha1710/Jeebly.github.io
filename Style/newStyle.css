@@ -1,0 +1,234 @@
+.dropdown_menus .dropdown-menu.dropdown-menu-right.show button{
+    padding: 0px !important; 
+    background: transparent !important;
+}
+
+
+.dropdown_menus .dropdown-menu.dropdown-menu-right.show button a{
+    padding: 6px 16px 6px !important;
+    display: block !important;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle:active{
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none !important;
+}
+.container-fluid.pricing.rate-cards.py-5{
+    margin-top: 70px !important;
+}
+.pickup_address {
+padding-top: 70px !important;
+}
+.dashboard{
+    margin-top: 120px !important;
+}
+section.order_tracking_page {
+    padding-top: 120px !important;
+
+}
+section.order_tracking_page h1{
+    margin-bottom: 2rem !important;
+}
+.container-fluid.pricing.rate-cards.py-5 h1.mb-4.text-center.px-0.mx-auto{
+    margin-bottom: 0px !important;
+}
+.book_shipments {
+    margin-top: 75px !important; 
+}
+.profile {
+    margin-top: 72px !important;
+}
+.container-fluid.section.py-5.px-0.contact_page{
+    padding-top: 7rem !important;
+}
+.wallet_page {
+    padding-top: 120px !important;
+}
+.book_shipments .icon{
+    max-width: 100%;
+}
+.delete_account{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.delete_account a{
+    
+    color: #685f5c;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+}
+.delete_account a:hover{
+    border-bottom: solid 2px #685f5c;
+    
+    
+}
+.delete_acc_mod button.btn.btn-secondary{
+    color: #555 !important;
+    background-color: #efefef !important;
+    border: none !important;
+    padding: 6px 24px !important;
+}
+.delete_acc_mod button.btn.btn-primary{
+    background: #e64942 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 6px 24px !important;
+
+}
+.delete_acc_mod{
+    margin-top: 100px;
+}
+.delete_acc_mod .modal-footer{
+    margin: auto;
+    border: none;
+}
+.delete_acc_mod .modal-body{
+    text-align: center;
+    padding: 0px !important;
+}
+.swal-icon:first-child {
+    margin-top: 32px;
+}
+.delete_acc_mod .modal-header{
+    border-bottom: none;
+}
+.swal-icon {
+    width: 80px;
+    height: 80px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    box-sizing: content-box;
+    margin: 20px auto;
+    color: #f8bb86;
+}
+.swal-icon--warning__body, .swal-icon--warning__dot {
+    position: absolute;
+    left: 50%;
+    background-color: #f8bb86;
+}
+.swal-icon--warning__body {
+    width: 5px;
+    height: 47px;
+    top: 10px;
+    border-radius: 2px;
+    margin-left: -2px;
+}
+.swal-icon--warning__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: -4px;
+    bottom: -11px;
+}
+.swal-icon--warning__body, .swal-icon--warning__dot {
+    position: absolute;
+    left: 50%;
+    background-color: #f8bb86;
+}
+
+
+
+.container-fluid.profile.py-5.px-0 {
+    padding-bottom: 2rem !important;
+}
+
+.delete_account {margin-bottom: 28px !important;display: block;width: 130px;margin: auto;}
+
+.delete_account a {
+    border-bottom: 2px solid transparent;
+}
+@media (max-width:767px){
+    .pickup_address {
+        padding-top: 100px !important;
+        }
+        section.order_tracking_page {
+            padding-top: 115px !important;
+        
+        }
+        .contact_page {
+            margin-top: 72px !important;
+        }
+        .wallet_page {
+            padding-top: 72px !important;
+        }
+        body .container-fluid.section.py-5.px-0.contact_page {
+    margin-top: 8px !important;
+}
+
+.book_shipments .inside-card {padding: 20px;}
+
+.book_shipments .inside-card label.ml-2 {
+    margin-left: 0px !important;
+}
+
+.book_shipments .inside-card .card-scroll {
+    height: auto !important;
+    margin-top: 10px;
+}
+
+.book_shipments .payment-card.mt-4 {
+    padding: 33px !important;
+}
+
+.book_shipments .payment-card.mt-4 .col-sm-6.col-md-6.text-right {
+    text-align: left !important;
+    padding-top: 1rem;
+}
+
+.book_shipments .payment-card .col-sm-6.col-md-6 span.pay-amount.mt-2.d-block {
+    margin-top: 0px !important;
+}
+
+.book_shipments .payment-card.mt-4 .col-sm-6.col-md-6.text-right a.recharge {
+    padding-top: 11px;
+    display: block;
+}
+.table-responsive.your_order_table .card-body {
+    min-height: 0px;
+    padding: 0px 10px;
+}
+
+.table-responsive.your_order_table .card-body p.card-text {
+    margin-top: 0px;
+}
+
+.table-responsive.your_order_table .card-body p.card-text span:first-child {
+    font-weight: bold;
+    font-size: 14px !important;
+}
+.cod_settlement_p .card.mb-3 {
+    border-radius: 6px;
+}
+
+}
+/* 01.06.2023  */
+@media(max-width: 991px){
+    header nav.navbar .btn-group.profile_btn{
+      display: block !important;
+          width: 48px !important;
+      margin: initial !important;
+      margin-right: 0px !important;
+      margin-left: auto !important;
+    }
+    button.btn.btn-secondary.dropdown-toggle:hover {
+      background: transparent;
+  }
+  
+  .profile_btn button.btn:focus, .profile_btn button.btn.active {
+      box-shadow: none !important;
+      background-color: transparent !important;
+  }
+    .profile_btn button {
+      background: transparent !important;
+      padding: 0px;
+      margin: 0px;
+      border: none;
+  }
+    header nav.navbar .profile_btn button img {
+      width: 40px;
+  }
+  }
